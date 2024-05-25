@@ -1,0 +1,26 @@
+﻿@model List<ArticleDto>
+
+<div class="nk-widget nk-widget-highlighted">
+    <h4 class="nk-widget-title"><span><span class="text-main-1">Latest</span> Screenshots</span></h4>
+    <div class="nk-widget-content">
+        <div class="nk-popup-gallery">
+            <div class="row sm-gap vertical-gap">
+                @foreach(var item in Model)
+                {
+                    <div class="col-sm-6">
+                        <div class="nk-gallery-item-box">
+                            <a href="~/images/@item.Image.FileName" class="nk-gallery-item" data-size="1016x572">
+                                <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
+                                <img style="height:10em;width:10em" class="mb-3" src="~/images/@item.Image.FileName" alt="@item.Title">
+                            </a>
+                            <div class="nk-gallery-item-description">
+                                <h4>@item.Title</h4>
+                                @item.VideoContent
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

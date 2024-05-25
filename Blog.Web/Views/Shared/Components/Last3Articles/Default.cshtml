@@ -1,0 +1,17 @@
+﻿@model List<ArticleDto>
+
+<div class="nk-widget nk-widget-highlighted">
+    <h4 class="nk-widget-title"><span><span class="text-main-1">Son 3</span> Yazı</span></h4>
+    <div class="nk-widget-content">
+        @foreach (var article in Model)
+        {
+            <div class="nk-widget-post">
+                <a asp-controller="Blog" asp-action="Detail" asp-route-id="@article.Id" class="nk-post-image">
+                    <img style="height:7em;width:8em" class="mb-3" src="~/images/@article.Image.FileName" alt="@article.Title">
+                </a>
+                <h3 class="nk-post-title"><a asp-controller="Blog" asp-action="Detail" asp-route-id="@article.Id">@article.Title</a></h3>
+                <div class="nk-post-date"><span class="fa fa-calendar"></span> @article.CreatedDate.ToString("MMM dd, yyyy")</div>
+            </div>
+        }
+    </div>
+</div>

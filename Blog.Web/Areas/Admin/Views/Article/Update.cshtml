@@ -1,0 +1,76 @@
+﻿@model ArticleUpdateDto
+
+<div class="content-wrapper">
+
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+
+
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">Makale Yönetimi /</span> Makale Düzenle
+        </h4>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <form asp-controller="Article" asp-action="Update" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly"></div>
+                        <div class="card-body">
+                            <input type="hidden" asp-for="Id" />
+                            <div class="form-group">
+                                <label asp-for="CategoryId">Kategori</label>
+                                <select id="categoryList" class="form-control mb-3" asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories, "Id", "Name"))"></select>
+                                <span asp-validation-for="CategoryId" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title" class="form-label">Başlık</label>
+                                <input asp-for="Title" type="text" class="form-control mb-3" id="defaultFormControlInput" placeholder="Lütfen başlık giriniz." aria-describedby="defaultFormControlHelp">
+                                <span asp-validation-for="Title" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Content" class="form-label">İçerik</label>
+                                <textarea asp-for="Content" type="text" class="form-control mb-3" id="defaultFormControlInput" style="min-height:300px;" placeholder="İçeriği giriniz." aria-describedby="defaultFormControlHelp"></textarea>
+                                <span asp-validation-for="Content" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Quote" class="form-label">Alıntı</label>
+                                <textarea asp-for="Quote" type="text" class="form-control mb-3" id="defaultFormControlInput" style="min-height:100px;" placeholder="Alıntı içeriğini giriniz(Zorunlu değil)." aria-describedby="defaultFormControlHelp"></textarea>
+                                <span asp-validation-for="Quote" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="QuoteAuthor" class="form-label">Alıntı Yapılan Kişi</label>
+                                <input asp-for="QuoteAuthor" type="text" class="form-control mb-3" id="defaultFormControlInput" placeholder="Alıntı yapılan kişiyi giriniz(Zorunlu değil)." aria-describedby="defaultFormControlHelp">
+                                <span asp-validation-for="QuoteAuthor" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="VideoUrl" class="form-label">Video Url'i</label>
+                                <input asp-for="VideoUrl" type="text" class="form-control mb-3" id="defaultFormControlInput" placeholder="Videonun url'ini ekleyin(Zorunlu değil)." aria-describedby="defaultFormControlHelp">
+                                <span asp-validation-for="VideoUrl" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="VideoContent" class="form-label">Video içeriği</label>
+                                <textarea asp-for="VideoContent" type="text" class="form-control mb-3" id="defaultFormControlInput" style="min-height:100px;" placeholder="Alıntı içeriğini giriniz(Zorunlu değil)." aria-describedby="defaultFormControlHelp"></textarea>
+                                <span asp-validation-for="VideoContent" class="text-danger mb-3"></span>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="defaultFormControlInput" class="form-label d-block">Mevcut Resim</label>
+                                    <img src="~/images/@Model.Image.FileName" alt="@Model.Title" style="height:30em; width:35em;" class="mb-3" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Photo" for="defaultFormControlInput" class="form-label">Resim seçiniz</label>
+                                    <input asp-for="Photo" type="file" accept="image/*" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" required>
+                                    <span asp-validation-for="Photo" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Kaydet</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
