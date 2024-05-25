@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kWAPJgZEDHDs/1rXG0mZ6uifVKTwCOTHE33ajdBIfRA=",
+  "Hash": "7KwDg65VdzwqG3jgJnhqNoSET7ZYY4L0pTUtmxe7GL0=",
   "Source": "Blog.Web",
   "BasePath": "_content/Blog.Web",
   "Mode": "Default",
@@ -5882,6 +5882,23 @@
       "OriginalItemSpec": "wwwroot\\images\\user-images\\AbdullahAvzi_586.jpg"
     },
     {
+      "Identity": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\images\\user-images\\AbdullahAvzi_6.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/user-images/AbdullahAvzi_6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user-images\\AbdullahAvzi_6.jpg"
+    },
+    {
       "Identity": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\images\\user-images\\AbdullahAvzi_605.jpg",
       "SourceId": "Blog.Web",
       "SourceType": "Discovered",
@@ -6628,6 +6645,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\user-images\\NathanDoe_963.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\images\\user-images\\NETCoreDenemeMakalesi_16.png",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/user-images/NETCoreDenemeMakalesi_16.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user-images\\NETCoreDenemeMakalesi_16.png"
+    },
+    {
+      "Identity": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\images\\user-images\\NETCoreDenemeMakalesi_255.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/user-images/NETCoreDenemeMakalesi_255.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user-images\\NETCoreDenemeMakalesi_255.jpg"
     },
     {
       "Identity": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\wwwroot\\images\\user-images\\Terliveyorgunkebapci_906.webp",
