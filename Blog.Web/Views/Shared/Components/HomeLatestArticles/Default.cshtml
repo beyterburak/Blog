@@ -1,0 +1,55 @@
+﻿@model List<ArticleDto>
+
+<div class="nk-news-box">
+    <div class="nk-news-box-list">
+        <div class="nano">
+            <div class="nano-content">
+
+                @foreach (var article in Model)
+                {
+                    <div class="nk-news-box-item nk-news-box-item">
+                        <div class="nk-news-box-item-img">
+                            <img style="height:7em;width:8em" class="mb-3" src="~/images/@article.Image.FileName" alt="@article.Title">
+                        </div>
+                        <h3 class="nk-news-box-item-title">@article.Title</h3>
+
+                        <span class="nk-news-box-item-categories">
+                            <span class="bg-main-4">@article.Category.Name</span>
+                        </span>
+
+                        <div class="nk-news-box-item-text">
+                            <p>@(article.Content.Length > 280 ? article.Content.Substring(0, 280) : article.Content)...</p>
+                        </div>
+                        <a asp-controller="Blog" asp-action="Detail" asp-route-id="@article.Id" class="nk-news-box-item-url">Devamını Oku</a>
+                        <div class="nk-news-box-item-date"><span class="fa fa-calendar"></span> @article.CreatedDate.ToString("MMM dd, yyyy")</div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+
+    @foreach (var article in Model)
+    {
+        <div class="nk-news-box-each-info" selected>
+            <div class="nano">
+                <div class="nano-content">
+                    <div class="nk-news-box-item-image">
+                        <img style="height:30em;width:40em" src="~/images/@article.Image.FileName" alt="@article.Title">
+                        <span class="nk-news-box-item-categories">
+                            <span class="bg-main-4">@article.Category.Name</span>
+                        </span>
+                    </div>
+                    <h3 class="nk-news-box-item-title">@article.Title</h3>
+                    <div class="nk-news-box-item-text">
+                        <p>@(article.Content.Length > 280 ? article.Content.Substring(0, 280) : article.Content)...</p>
+                    </div>
+                    <a asp-controller="Blog" asp-action="Detail" asp-route-id="@article.Id" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1">Devamını Oku</a>
+                    <div class="nk-news-box-item-date">
+                        <span class="fa fa-calendar"></span> @article.CreatedDate.ToString("MMM dd, yyyy")
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

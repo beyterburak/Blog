@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Blog.Web",
+    "\\Blog.Web\\Views",
+    "\\Blog.Web\\Views\\Shared",
+    "\\Blog.Web\\Views\\Shared\\Components",
+    "\\Blog.Web\\Views\\Shared\\Components\\Last3Articles"
+  ],
+  "SelectedNode": "\\Blog.Web\\Views\\Shared\\Components\\Last3Articles\\Default.cshtml",
+  "PreviewInSolutionExplorer": false
+}

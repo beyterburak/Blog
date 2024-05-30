@@ -28,6 +28,7 @@ namespace Blog.Service.Extensions
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IImageHelper, ImageHelper>();
             services.AddScoped<IDashboardService, DashboardService>();
+            services.AddScoped<ICommentService, CommentService>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 

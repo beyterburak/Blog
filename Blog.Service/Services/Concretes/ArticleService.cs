@@ -222,5 +222,65 @@ namespace Blog.Service.Services.Concretes
             var articleDtos = mapper.Map<List<ArticleDto>>(lastThreeArticles);
             return articleDtos;
         }
+
+        public async Task<List<ArticleDto>> GetFooterLatestPostsAsync()
+        {
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.isDeleted, y => y.Image);
+
+            var lastThreeArticles = articles
+                .OrderByDescending(z => z.CreatedDate)
+                .Take(2)
+                .ToList();
+
+            var articleDtos = mapper.Map<List<ArticleDto>>(lastThreeArticles);
+            return articleDtos;
+        }
+
+        public async Task<List<ArticleDto>> GetFooterPopularPostsAsync()
+        {
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.isDeleted, y => y.Image);
+
+            var lastThreeArticles = articles
+                .OrderByDescending(z => z.ViewCount)
+                .Take(2)
+                .ToList();
+
+            var articleDtos = mapper.Map<List<ArticleDto>>(lastThreeArticles);
+            return articleDtos;
+        }
+
+        public async Task<List<ArticleDto>> GetLastTwoNonDeletedArticlesAsync()
+        {
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.isDeleted, y => y.Image, z => z.Category);
+
+            var lastTwoArticles = articles
+                .OrderByDescending(z => z.CreatedBy)
+                .Take(2)
+                .ToList();
+
+            var articleDtos = mapper.Map<List<ArticleDto>>(lastTwoArticles);
+            return articleDtos;
+        }
+
+        public async Task<List<ArticleDto>> GetLastFourNonDeletedArticlesAsync()
+        {
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.isDeleted, y => y.Image);
+
+            var lastThreeArticles = articles
+                .OrderByDescending(z => z.CreatedDate)
+                .Take(4)
+                .ToList();
+
+            var articleDtos = mapper.Map<List<ArticleDto>>(lastThreeArticles);
+            return articleDtos;
+        }
+
+        public async Task<List<ArticleDto>> GetAllArticlesWithImagesAsync()
+        {
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.isDeleted, x => x.Image);
+            var map = mapper.Map<List<ArticleDto>>(articles);
+
+            return map;
+        }
     }
 }

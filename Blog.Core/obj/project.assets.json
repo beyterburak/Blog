@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Core\\Blog.Core.csproj",
+      "projectUniqueName": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Core\\Blog.Core.csproj",
       "projectName": "Blog.Core",
-      "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Core\\Blog.Core.csproj",
+      "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Core\\Blog.Core.csproj",
       "packagesPath": "C:\\Users\\beyte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Core\\obj\\",
+      "outputPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\beyte\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,22 @@
+﻿@model List<ArticleDto>
+
+@foreach (var article in Model)
+{
+    <div class="col-md-6">
+        <!-- START: Post -->
+        <div class="nk-blog-post">
+            <a asp-controller="Blog" asp-action="Detail" asp-route-id="@article.Id" class="nk-post-img">
+                <img style="height:18em;width:26em" class="mb-3" src="~/images/@article.Image.FileName" alt="@article.Title" />
+                <span class="nk-post-comments-count">@article.ViewCount</span>
+
+                <span class="nk-post-categories">
+                    <span class="bg-main-1">@article.Category.Name</span>
+                </span>
+
+            </a>
+            <div class="nk-gap"></div>
+            <h2 class="nk-post-title h4"><a asp-controller="Blog" asp-action="Detail" asp-route-id="@article.Id">@article.Title</a></h2>
+        </div>
+        <!-- END: Post -->
+    </div>
+}

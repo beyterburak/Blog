@@ -1,0 +1,14 @@
+﻿@using Blog.Entity.DTOs.Comments;
+@model List<CommentDto>
+
+@foreach(var item in Model)
+{
+    <div class="nk-comment">
+        <div class="nk-comment-meta">
+            <img src="~/html-store-gaming-template/assets/images/avatar-3.jpg" alt="Wolfenstein" class="rounded-circle" width="35"> by <a href="#">@item.Username</a> @item.CreatedDate
+        </div>
+        <div class="nk-comment-text">
+            <p>@item.Content</p>
+        </div>
+    </div>
+}

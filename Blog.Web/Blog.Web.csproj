@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\gaming-template\gaming-template\**" />
+    <Content Remove="wwwroot\gaming-template\gaming-template\**" />
+    <EmbeddedResource Remove="wwwroot\gaming-template\gaming-template\**" />
+    <None Remove="wwwroot\gaming-template\gaming-template\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.27" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.27">
       <PrivateAssets>all</PrivateAssets>
@@ -24,7 +31,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="wwwroot\html-store-gaming-template\html-store-gaming-template\php\instagram\cache\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

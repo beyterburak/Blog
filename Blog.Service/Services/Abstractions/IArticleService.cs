@@ -23,5 +23,10 @@ namespace Blog.Service.Services.Abstractions
         Task<List<ArticleDto>> GetLastThreeNonDeletedArticlesAsync();
         Task<List<ArticleDto>> GetPopularThreeNonDeletedArticlesAsync();
         Task<List<ArticleDto>> GetLastSixNonDeletedArticleImagesAsync();
+        Task<List<ArticleDto>> GetFooterLatestPostsAsync();
+        Task<List<ArticleDto>> GetFooterPopularPostsAsync();
+        Task<List<ArticleDto>> GetLastTwoNonDeletedArticlesAsync();
+        Task<List<ArticleDto>> GetLastFourNonDeletedArticlesAsync();
+        Task<List<ArticleDto>> GetAllArticlesWithImagesAsync();
     }
 }

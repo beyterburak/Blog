@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yr4ZZ1z+hZkaZxyjnJ2HDr9vw5aw7qk04ZLxb2jQqWe3tj2F53oAVZGdJ+sH3eagwnDgnHHAhrXDOG3+siwheA==",
+  "dgSpecHash": "oNPP4IFx+FBZVj4lM9UIFU7uH3xg66xgkeFv9ZDawfc6nTVJzcOHhlLJDkNbQcR5rtJRnjVX9HyG85cNF5t4VQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\Blog.Web.csproj",
+  "projectFilePath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Web\\Blog.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beyte\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\beyte\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

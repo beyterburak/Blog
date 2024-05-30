@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZvR/D7lneo2txljLM9Qm+EL6bMudGvPmTsT1KUzU7irEH0iNVwFLKX2Rxc9ZFGE4qRlD1ZNVspCCW2PQkvRKJg==",
+  "dgSpecHash": "An/PEMEZ0SmSvo8eYbP07RndH97myMW/ugKksGN+eKhMv8VlkpdoWF3Res8kgdq7iZfyNi7VcfNiWQMsOsSLZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Entity\\Blog.Entity.csproj",
+  "projectFilePath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Entity\\Blog.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beyte\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.27\\microsoft.aspnetcore.cryptography.internal.6.0.27.nupkg.sha512",
     "C:\\Users\\beyte\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.27\\microsoft.aspnetcore.cryptography.keyderivation.6.0.27.nupkg.sha512",

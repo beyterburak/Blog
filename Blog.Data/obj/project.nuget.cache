@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pXEP9eGQEvt3dRYlg4LnlHJtM0xMhKeyIhrwGLsJ2n0i+D07xIVUFCuAgQ8lugj6/vvFMopEN+yZ3VucBQRZew==",
+  "dgSpecHash": "M3r5gTeMxCFnxupunvTDbP2EDL/gLyrynA7i96aqSTN8YdUPNG6HzAmL8A+vwVmWVd0ET4TAf08erw8ZNGrt1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Data\\Blog.Data.csproj",
+  "projectFilePath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Data\\Blog.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beyte\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\beyte\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.27\\microsoft.aspnetcore.cryptography.internal.6.0.27.nupkg.sha512",

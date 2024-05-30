@@ -12465,11 +12465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\Blog.Web.csproj",
+      "projectUniqueName": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Web\\Blog.Web.csproj",
       "projectName": "Blog.Web",
-      "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\Blog.Web.csproj",
+      "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Web\\Blog.Web.csproj",
       "packagesPath": "C:\\Users\\beyte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Web\\obj\\",
+      "outputPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\beyte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12487,11 +12487,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Data\\Blog.Data.csproj": {
-              "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Data\\Blog.Data.csproj"
+            "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Data\\Blog.Data.csproj": {
+              "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Data\\Blog.Data.csproj"
             },
-            "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Service\\Blog.Service.csproj": {
-              "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\Blog\\Blog\\Blog.Service\\Blog.Service.csproj"
+            "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Service\\Blog.Service.csproj": {
+              "projectPath": "C:\\Users\\beyte\\OneDrive\\Masaüstü\\OkulBlog\\Blog\\Blog.Service\\Blog.Service.csproj"
             }
           }
         }

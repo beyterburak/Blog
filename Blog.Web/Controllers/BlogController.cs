@@ -30,6 +30,7 @@ namespace Blog.Web.Controllers
         }
         public async Task<IActionResult> Detail(Guid id)
         {
+            ViewBag.Id = id;
             var ipAdress = httpContextAccessor.HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
             var articleVisitors = await unitOfWork.GetRepository<ArticleVisitor>().GetAllAsync(null, x => x.Visitor, y => y.Article);
             var article = await unitOfWork.GetRepository<Article>().GetAsync(x => x.Id == id);
